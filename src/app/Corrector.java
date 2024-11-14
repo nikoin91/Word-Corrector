@@ -2,15 +2,15 @@ package app;
 
 public class Corrector {
     public String handleData(String[] strs) {
-        stringBuilder = new StringBuilder();
+        StringBuilder stringBuilder = new StringBuilder();
         int count = 0;
         for (String str : strs) {
-            if (str.("b")) {
-                str = str.replac("b", "o");
+            if (str.contains("b")) {
+                str = str.replace("b", "o");
             }
-            count;
-            stringBuilder.append(count).append(") ").append(str).append("\\n");
+            ++count;
+            stringBuilder.append(count).append(") ").append(str).append("\n");
         }
-        return stringBuilber.toString();
+        return stringBuilder.toString();
     }
 }
